@@ -33,6 +33,6 @@ content = st.text_input("시의 주제를 제시해주세요")
 st.write("시의 주제는 ", content)
 
 if st.button("시 작성 요청하기"):
-    with st.spinner("Wait for it..."):
+    with st.spinner("Wait for it...기다리세요"):
         result = chain.invoke({"input": content + "에 대한 시를 써줘"})
         st.write(result)
